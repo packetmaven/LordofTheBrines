@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+LordofTheBrines.egg-info/PKG-INFO
+LordofTheBrines.egg-info/SOURCES.txt
+LordofTheBrines.egg-info/dependency_links.txt
+LordofTheBrines.egg-info/top_level.txt
