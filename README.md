@@ -12,14 +12,6 @@ LordofTheBrines is a security framework designed for detecting malicious Python 
 - **High Accuracy:** Achieves ~95% accuracy on test datasets with 2% false positive rate.
 - **Configurable:** Allows customization of detection thresholds, feature selection methods, and model weights.
 
-## Performance Metrics
-
-- **Accuracy:** 100% (6/6 files correctly classified)
-- **Precision:** 100% (0 false positives)
-- **Recall:** 100% (0 false negatives)
-- **False Positive Rate:** 0%
-- **Confidence Scoring:** 95.85% for benign files, 99.87% for malicious files
-
 ## Installation
 
 ### Prerequisites
