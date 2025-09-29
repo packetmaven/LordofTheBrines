@@ -340,10 +340,10 @@ def main():
                 result.features["ir_strict_review"] = bool(review_bucket)
                 if to_quarantine and args.quarantine_dir:
                     try:
-                        import shutil, os
+                        import shutil
                         os.makedirs(args.quarantine_dir, exist_ok=True)
-                        dest = os.path.join(args.quarantine_dir, os.path.basename(args.path if os.path.isfile(args.path) else path))
-                        shutil.copy2(args.path if os.path.isfile(args.path) else path, dest)
+                        dest = os.path.join(args.quarantine_dir, os.path.basename(args.path))
+                        shutil.copy2(args.path, dest)
                         strict_notes.append(f"copied to {dest}")
                     except Exception:
                         strict_notes.append("copy failed")
@@ -416,9 +416,6 @@ def main():
                         print(f"- {path} (Confidence: {result.confidence:.2f})")
 
     return 0
-
-if __name__ == "__main__":
-    sys.exit(main())
 
 def _print_rich_summary(results: dict) -> None:
     try:
@@ -916,4 +913,8 @@ def _explanation_key_items(reasons: list[str], features: dict) -> list[tuple[str
         pass
     return items
 
+
+
+if __name__ == "__main__":
+    sys.exit(main())
 
