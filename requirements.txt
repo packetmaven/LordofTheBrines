@@ -1,0 +1,6 @@
+numpy>=1.20.0
+requests>=2.25.0
+matplotlib>=3.3.0 
+# CLI banner rendering
+rich>=13.0.0 
+py7zr>=0.20.0
